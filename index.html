@@ -15,10 +15,144 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Professional design overrides -->
+        <style>
+            :root {
+                --pro-dark: #0f172a;
+                --pro-accent: #1abc9c;
+            }
+
+            /* Navbar */
+            #mainNav {
+                background: rgba(15, 23, 42, 0.97) !important;
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+                box-shadow: 0 2px 24px rgba(0, 0, 0, 0.35);
+            }
+            #mainNav .navbar-brand {
+                font-weight: 800;
+                letter-spacing: 0.2em;
+                font-size: 1.1rem;
+            }
+            #mainNav .navbar-nav li.nav-item a.nav-link {
+                font-size: 0.75rem;
+                letter-spacing: 0.14em;
+                font-weight: 700;
+                transition: color 0.2s;
+            }
+
+            /* Masthead */
+            .masthead {
+                background: linear-gradient(150deg, #0f172a 0%, #1e293b 55%, #0d3040 100%) !important;
+                padding-top: calc(9rem + 74px) !important;
+                padding-bottom: 9rem !important;
+            }
+            .masthead-heading {
+                font-size: 3.2rem !important;
+                letter-spacing: 0.2em !important;
+                font-weight: 800 !important;
+            }
+            .masthead-subheading {
+                font-size: 0.85rem !important;
+                letter-spacing: 0.3em !important;
+                text-transform: uppercase !important;
+                color: rgba(255, 255, 255, 0.55) !important;
+            }
+            .masthead-avatar {
+                width: 10rem !important;
+                border-radius: 50%;
+                border: 2px solid rgba(26, 188, 156, 0.4);
+                padding: 4px;
+                box-shadow: 0 0 48px rgba(26, 188, 156, 0.18);
+            }
+
+            /* Dividers — slimmer, more refined */
+            .divider-custom .divider-custom-line {
+                max-width: 4.5rem !important;
+                height: 1px !important;
+                border-radius: 0 !important;
+            }
+            .divider-custom .divider-custom-icon {
+                font-size: 0.6rem !important;
+                margin: 0 0.75rem;
+            }
+
+            /* Section headings */
+            .page-section-heading {
+                letter-spacing: 0.18em !important;
+                font-weight: 800 !important;
+            }
+
+            /* Portfolio items */
+            .portfolio .portfolio-item {
+                border-radius: 0.75rem !important;
+                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1) !important;
+                transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+            }
+            .portfolio .portfolio-item:hover {
+                transform: translateY(-6px) !important;
+                box-shadow: 0 14px 42px rgba(0, 0, 0, 0.18) !important;
+            }
+
+            /* About section */
+            section#about.bg-primary {
+                background: linear-gradient(150deg, #0f172a 0%, #1a3a4a 100%) !important;
+            }
+
+            /* Buttons */
+            .btn-xl {
+                border-radius: 3rem !important;
+                letter-spacing: 0.1em !important;
+                font-size: 0.85rem !important;
+                font-weight: 700 !important;
+                padding: 0.85rem 2.25rem !important;
+                transition: all 0.3s !important;
+            }
+            .btn-xl:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 28px rgba(26, 188, 156, 0.3) !important;
+            }
+            .btn-primary:not(.btn-xl):not(.btn-outline-light) {
+                border-radius: 0.4rem !important;
+            }
+
+            /* Social buttons */
+            .btn-social {
+                transition: transform 0.2s, box-shadow 0.2s !important;
+            }
+            .btn-social:hover {
+                transform: translateY(-3px) !important;
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35) !important;
+            }
+
+            /* Footer */
+            .footer {
+                background: #0b1120 !important;
+                padding-top: 4rem !important;
+                padding-bottom: 4rem !important;
+            }
+            .copyright {
+                background: #060d18 !important;
+                font-size: 0.78rem;
+                letter-spacing: 0.06em;
+            }
+
+            /* Contact form */
+            .form-floating input.form-control,
+            .form-floating textarea.form-control {
+                font-size: 1rem !important;
+                border: 1px solid #dee2e6 !important;
+                border-radius: 0.5rem !important;
+            }
+            .form-floating label {
+                font-size: 0.9rem !important;
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand" href="#page-top">GHIPI</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,11 +178,11 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fas fa-gem"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Test - avataaars - Illustrator</p>
+                <p class="masthead-subheading font-weight-light mb-0">Full Stack Developer &amp; UI Designer</p>
             </div>
         </header>
         <!-- Portfolio Section-->
@@ -59,7 +193,7 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fas fa-gem"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Grid Items-->
@@ -129,19 +263,19 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fas fa-gem"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead">Dedicated to crafting high-quality digital experiences through clean code and thoughtful design. Specializing in modern web technologies with a focus on performance and accessibility.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Passionate about turning complex problems into simple, elegant solutions. Every project is an opportunity to create something meaningful — let's build something great together.</p></div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download me-2"></i>
-                        Free Download!
+                    <a class="btn btn-xl btn-outline-light" href="#contact">
+                        <i class="fas fa-envelope me-2"></i>
+                        Get In Touch
                     </a>
                 </div>
             </div>
@@ -154,7 +288,7 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fas fa-gem"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Contact Section Form-->
@@ -240,11 +374,10 @@
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                        <h4 class="text-uppercase mb-4">About GHIPI</h4>
                         <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://xxx">GHIPI</a>
-                            .
+                            Building elegant digital solutions for modern businesses.
+                            <a href="#portfolio" class="text-white fw-bold">View Portfolio</a>
                         </p>
                     </div>
                 </div>
@@ -252,7 +385,7 @@
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Your Website 2023</small></div>
+            <div class="container"><small>Copyright &copy; GHIPI 2026</small></div>
         </div>
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
@@ -269,7 +402,7 @@
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-gem"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
@@ -301,7 +434,7 @@
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-gem"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
@@ -333,7 +466,7 @@
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-gem"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
@@ -365,7 +498,7 @@
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-gem"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
@@ -397,7 +530,7 @@
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-gem"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
@@ -429,7 +562,7 @@
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-gem"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
